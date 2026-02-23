@@ -322,6 +322,46 @@
     box-shadow: 0 8px 30px rgba(0, 212, 255, 0.25);
   }
 
+  .offer-btn-row {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+  }
+
+  .offer-btn-row .offer-cta {
+    flex: 1;
+  }
+
+  .offer-email {
+    flex: 1;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    background: transparent;
+    color: var(--teal);
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid var(--teal);
+    transition: all 0.3s;
+    position: relative;
+  }
+
+  .offer-email:hover {
+    background: rgba(0, 180, 216, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 212, 255, 0.15);
+    border-color: var(--teal-glow);
+    color: var(--teal-glow);
+  }
+
+  @media (max-width: 520px) {
+    .offer-btn-row {
+      flex-direction: column;
+    }
+  }
+
   /* ===== CREDIBILITY ===== */
   .cred {
     padding: 5rem 2rem;
@@ -468,11 +508,11 @@
         <li>30-day follow-up check-in to answer questions as you implement</li>
         <li>No pressure, no long-term commitment&mdash;just clarity on your next move</li>
       </ul>
-      <!-- ============================================ -->
-      <!-- TODO: Replace with your Calendly link        -->
-      <!-- Sign up free at https://calendly.com         -->
-      <!-- ============================================ -->
-      <a href="mailto:michaelkuhlman7@gmail.com?subject=AI%20Readiness%20Audit%20-%20Interested&body=Hi%20Michael%2C%0A%0AI%27m%20interested%20in%20learning%20more%20about%20the%20AI%20Readiness%20Audit%20for%20my%20business.%0A%0ABusiness%20name%3A%20%0AIndustry%3A%20%0ABest%20time%20to%20chat%3A%20%0A%0AThanks!" class="offer-cta">Schedule Your Audit Now &rarr;</a>
+      <p style="font-size:0.95rem;color:var(--text-light);line-height:1.7;margin-bottom:2rem;position:relative;"><strong style="color:var(--white);">Need more than a one-time audit?</strong> No problem. With a background in organizational change management&mdash;the kind that takes months or years to get right&mdash;I&rsquo;m built for the long haul. If you need ongoing support to make real change stick, we&rsquo;ll map that out together.</p>
+      <div class="offer-btn-row">
+        <a href="https://calendly.com/levelupbusinesssolutions/tech-readiness-audit" target="_blank" rel="noopener" class="offer-cta">Schedule Your Audit Now &rarr;</a>
+        <a href="mailto:michaelkuhlman7@gmail.com" class="offer-email">Email Us &#9993;</a>
+      </div>
     </div>
   </div>
 </section>
@@ -508,7 +548,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>&copy; 2026 LevelUp Business Solutions | AI &amp; Digital Marketing Consulting | Altamonte Springs, FL</p>
+  <p>&copy; 2026 LevelUp Business Solutions &bull; AI, Technology, Healthcare Operations, and Digital Marketing Consulting &bull; Orlando, FL</p>
   <p style="margin-top:0.5rem"><a href="mailto:michaelkuhlman7@gmail.com">michaelkuhlman7@gmail.com</a></p>
 </footer>
 
